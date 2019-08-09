@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: block;
+        width: 100%;
+        height: 100px;
+        background-color: red;
+    }
+    nav{
+        width: 100%;
+        height: 36px;
+        background-color:yellow;
+    }
+    /*IE9:行 级元素在设置宽度的时候是失效
+      IE8:完全不支持h5
+    */
+    main{
+        /*将行级元素转换为块级元素*/
+        display: block;
+        width: 100%;
+        height: 500px;
+        background-color: #ccc;
+    }
+    main > article {
+        width: 80%;
+        height: 100%;
+        background-color:purple;
+        float: left;
+    }
+    main > aside{
+        width: 20%;
+        height: 100%;
+        background-color: pink;
+        float: right;
+    }
+    footer{
+        width: 100%;
+        height: 86px;
+        background-color:skyblue;
+    }
+    </style>
+    <!--第一种方式：手动创建标签 ||默认转成行级元素 -->
+    <!-- <script>      
+        document.createElement("header");
+    </script> -->
+
+    <!--第二种方式：引入第三方插件-->
+    <!--html5shiv.min.js 默认情况下，ie8及以下Ie版本不支持h5,引入这个做兼容-->
+     <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+</head>
+<body>
+    <header>头部</header>
+    <nav>导航</nav>
+    <main>
+        <article>左边</article>
+        <aside>右边</aside>
+    </main>
+    <footer>底部</footer>
+</body>
+</html>

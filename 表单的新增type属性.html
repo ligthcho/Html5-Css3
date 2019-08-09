@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        用户名:
+        <input type="text" name="username" id="" >
+        <br>
+        密码：
+        <input type="password" name="password" id="">
+        <br>
+        邮箱：
+        <!-- email提供了邮箱的完整验证，要求包括@符号,同时必须包含服务器名称 -->
+        <input type="email" name="email" id="">
+        <br>
+        电话:
+        <!-- 它不是为了验证电话格式，而是为了在移动端打开数字键盘，限制用户只能输入数字 -->
+        <input type="tel" name="tel" id="">
+        <br>
+        网址：
+        <!-- 验证只能输入合法的网址：必须包含http://-- -->
+        <input type="url" name="url" id="">
+        <br>
+        数量：
+        <!-- 只能输入数字（包含小数点），不能输入其他的字符 max min value-->
+        <input type="number" name="number" id="" value="49" max="90" min="3">
+        <br>
+        请输入商品名称:
+        <!-- 提供更好的用户体验 -->
+        <input type="search" name="search" id="">
+        <br>
+        范围：
+        <!-- 标尺 -->
+        <input type="range" name="range" id="" max="29" min="2" value="4">
+        <br>
+        颜色：
+        <input type="color" name="color" id="">
+        <br>
+        <!-- 日期时间相关 -->
+        时间：
+        <input type="time" name="" id="">
+        <br>
+        日期：
+        <input type="date" name="" id="">
+        <br>
+        日期时间：
+        <!-- 大多数浏览器不能支持datetime,苹果的safari好像可以 -->
+        <input type="datetime" name="" id="">
+        <br>
+        日期和时间：
+        <input type="datetime-local" name="" id="">
+        <br>
+        月份：
+        <input type="month" name="" id="">
+        <br>
+        星期：
+        <input type="week" name="" id="">
+        <br>
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+</html>
